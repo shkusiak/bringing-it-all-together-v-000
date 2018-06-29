@@ -39,7 +39,9 @@ class Dog
     self
   end
 
-  def self.create
+  def self.create(name:, breed:) #creates an instance of a dog and saves it
+    dog = Dog.new(name, breed)
+    dog.save    
   end
 
   def self.find_by_id
